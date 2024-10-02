@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedox/pages/cart/cart.dart';
 import 'package:pokedox/pages/home_page/widgets/poke_list_item.dart';
 
 import 'widgets/poke_grid_card.dart';
@@ -18,9 +19,16 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
         actions: [
-          Badge.count(
-            count: 2,
-            child: const Icon(Icons.shopping_cart),
+          InkWell(
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => const Cart(),
+              ),
+            ),
+            child: Badge.count(
+              count: 2,
+              child: const Icon(Icons.shopping_cart),
+            ),
           ),
           const SizedBox(width: 20),
         ],
