@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:pokedox/model/pokemon.dart';
 
 part 'poke_mon_list_data.freezed.dart';
 part 'poke_mon_list_data.g.dart';
@@ -9,7 +10,7 @@ class PokeMonListData with _$PokeMonListData {
     int? count,
     dynamic next,
     dynamic previous,
-    List<Result>? results,
+    List<Pokemon>? results,
   }) = _PokeMonListData;
 
   factory PokeMonListData.fromJson(Map<String, dynamic> json) =>

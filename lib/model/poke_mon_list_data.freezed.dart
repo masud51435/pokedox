@@ -23,7 +23,7 @@ mixin _$PokeMonListData {
   int? get count => throw _privateConstructorUsedError;
   dynamic get next => throw _privateConstructorUsedError;
   dynamic get previous => throw _privateConstructorUsedError;
-  List<Result>? get results => throw _privateConstructorUsedError;
+  List<Pokemon>? get results => throw _privateConstructorUsedError;
 
   /// Serializes this PokeMonListData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -42,7 +42,7 @@ abstract class $PokeMonListDataCopyWith<$Res> {
       _$PokeMonListDataCopyWithImpl<$Res, PokeMonListData>;
   @useResult
   $Res call(
-      {int? count, dynamic next, dynamic previous, List<Result>? results});
+      {int? count, dynamic next, dynamic previous, List<Pokemon>? results});
 }
 
 /// @nodoc
@@ -81,7 +81,7 @@ class _$PokeMonListDataCopyWithImpl<$Res, $Val extends PokeMonListData>
       results: freezed == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<Result>?,
+              as List<Pokemon>?,
     ) as $Val);
   }
 }
@@ -95,7 +95,7 @@ abstract class _$$PokeMonListDataImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int? count, dynamic next, dynamic previous, List<Result>? results});
+      {int? count, dynamic next, dynamic previous, List<Pokemon>? results});
 }
 
 /// @nodoc
@@ -132,7 +132,7 @@ class __$$PokeMonListDataImplCopyWithImpl<$Res>
       results: freezed == results
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<Result>?,
+              as List<Pokemon>?,
     ));
   }
 }
@@ -141,7 +141,7 @@ class __$$PokeMonListDataImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$PokeMonListDataImpl implements _PokeMonListData {
   const _$PokeMonListDataImpl(
-      {this.count, this.next, this.previous, final List<Result>? results})
+      {this.count, this.next, this.previous, final List<Pokemon>? results})
       : _results = results;
 
   factory _$PokeMonListDataImpl.fromJson(Map<String, dynamic> json) =>
@@ -153,9 +153,9 @@ class _$PokeMonListDataImpl implements _PokeMonListData {
   final dynamic next;
   @override
   final dynamic previous;
-  final List<Result>? _results;
+  final List<Pokemon>? _results;
   @override
-  List<Result>? get results {
+  List<Pokemon>? get results {
     final value = _results;
     if (value == null) return null;
     if (_results is EqualUnmodifiableListView) return _results;
@@ -210,7 +210,7 @@ abstract class _PokeMonListData implements PokeMonListData {
       {final int? count,
       final dynamic next,
       final dynamic previous,
-      final List<Result>? results}) = _$PokeMonListDataImpl;
+      final List<Pokemon>? results}) = _$PokeMonListDataImpl;
 
   factory _PokeMonListData.fromJson(Map<String, dynamic> json) =
       _$PokeMonListDataImpl.fromJson;
@@ -222,7 +222,7 @@ abstract class _PokeMonListData implements PokeMonListData {
   @override
   dynamic get previous;
   @override
-  List<Result>? get results;
+  List<Pokemon>? get results;
 
   /// Create a copy of PokeMonListData
   /// with the given fields replaced by the non-null parameter values.

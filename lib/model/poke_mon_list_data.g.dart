@@ -13,7 +13,7 @@ _$PokeMonListDataImpl _$$PokeMonListDataImplFromJson(
       next: json['next'],
       previous: json['previous'],
       results: (json['results'] as List<dynamic>?)
-          ?.map((e) => Result.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => Pokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
