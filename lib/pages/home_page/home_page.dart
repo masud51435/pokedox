@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         actions: [
           Badge.count(
             count: 2,
-            child: const Icon(Icons.shopping_cart),
+            child: const Icon(Icons.favorite),
           ),
           const SizedBox(width: 20),
         ],

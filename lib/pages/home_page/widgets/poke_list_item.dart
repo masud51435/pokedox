@@ -29,7 +29,10 @@ class PokeListItem extends StatelessWidget {
               leading: CircleAvatar(),
               title: Text('item'),
               subtitle: Text('Has 121 Moves'),
-              trailing: Icon(Icons.favorite_outline),
+              trailing: Icon(
+                Icons.favorite_outline,
+                color: Colors.red,
+              ),
             );
           },
         ),

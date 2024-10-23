@@ -29,6 +29,7 @@ class PokeGridCard extends StatelessWidget {
               crossAxisCount: 2,
               mainAxisSpacing: 20,
               crossAxisSpacing: 20,
+              childAspectRatio: 1.1,
             ),
             itemCount: 9,
             itemBuilder: (BuildContext context, int index) {
@@ -75,7 +76,7 @@ class PokeGridCard extends StatelessWidget {
                           ),
                         ),
                         Icon(
-                          Icons.favorite_outline,
+                          Icons.favorite,
                           color: Colors.red,
                         ),
                       ],
